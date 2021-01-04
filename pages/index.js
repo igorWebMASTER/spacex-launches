@@ -24,7 +24,9 @@ export default function Home({ launches }) {
                 href={launch.links.video_link}
                 className={styles.card}
               >
+                <img src={launch.links.mission_patch} width='50' />
                 <h3>{launch.mission_name}</h3>
+
                 <p>
                   <strong>Lançamento</strong>:{' '}
                   {new Date(launch.launch_date_local).toLocaleString('pt-BR')}
